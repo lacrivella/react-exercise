@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import Dog from './Dog';
 // import Color from './Color';
 
@@ -12,6 +13,7 @@ export default function App() {
 
   return (
     <>
+      <Header />
       <Dog name="Nolan" age="14" weight="45lbs" />
       {/* <Color name={name} rgb={rgb} /> */}
       
