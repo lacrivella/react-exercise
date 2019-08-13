@@ -1,23 +1,33 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Dog() {
-  const dog = {
-    name: 'Nolan',
-    age: 14,
-    weight: '45lbs'
-  };
-  const fields = Object.keys(dog)
-    .map(key => {
-      return (
-        <>
-          <dt>{key}</dt>
-          <dd>{dog[key]}</dd>
-        </>
-      );
-    });
+function Dog({ name, age, weight }) {
   return (
     <dl>
-      {fields}
+      <dt>Name</dt>
+      <dd>{name}</dd>
+
+      <dt>Age</dt>
+      <dd>{age}</dd>
+
+      <dt>Weight</dt>
+      <dd>{weight ? weight : 'unknown'}</dd>
     </dl>
   );
 }
+
+// we can write weight like this as well
+// {weight && (
+//   <>
+//     <dt>Weight</dt>
+//     <dd>{weight}</dd>
+//   </>
+// )}
+
+
+Dog.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+  weight: PropTypes.string
+};
+export default Dog;
