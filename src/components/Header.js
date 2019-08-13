@@ -1,11 +1,18 @@
 import React from 'react';
-import nolie from '../assets/nolie.jpg';
+import propTypes from 'prop-types';
 
-export default function Header() {
+function Header({ title, image }) {
   return (
     <header>
-      <h1>Nolan!</h1>
-      <img src={nolie} style={{ height: '20em' }}/>
+      <h1>{title}</h1>
+      <img src={image} style={{ height: '20em' }}/>
     </header>
   );
 }
+
+Header.propTypes = {
+  title: propTypes.string.isRequired,
+  image: propTypes.string
+};
+
+export default Header;
