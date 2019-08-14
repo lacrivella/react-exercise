@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 .ColorPicker {
 
   button {
     color: white;
+    border: dotted .5px black;
     height: 100px;
     width: 100px;
+    font-family: 'Open Sans Condensed', sans-serif;
   }
 
-  .titian {
-    background-color: #4a0b0f;
+  .cerise {
+    background-color: #DE3163;
   }
   .saffron {
     background-color: #ffe033;
@@ -15,11 +18,16 @@
   .viridian {
     background-color: #40826D;
   }
-  .prussian {
-    background-color: #003153;
+  .capri {
+    background-color: #00BFFF;
   }
 div {
+  margin: 20px;
   height: 50px;
   width: 50px;
   }
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 }

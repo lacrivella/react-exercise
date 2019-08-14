@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+h2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.rainbow {
+  background: -webkit-linear-gradient(rgb(249, 3, 175), rgb(245, 197, 5), rgb(14, 177, 241));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+button {
+  height: 50px;
+  border-radius: 25%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
