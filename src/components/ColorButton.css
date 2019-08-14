@@ -1,0 +1,17 @@
+.ColorButton {
+  button {
+    border: none;
+  }
+
+  .titian {
+    background-color: #4a0b0f;
+  }
+
+  .saffron {
+    background-color: #ff9933;
+  }
+
+  .prussian {
+    background-color: #003153;
+  }
+}
