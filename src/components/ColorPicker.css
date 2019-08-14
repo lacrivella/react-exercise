@@ -1,0 +1,25 @@
+.ColorPicker {
+
+  button {
+    color: white;
+    height: 100px;
+    width: 100px;
+  }
+
+  .titian {
+    background-color: #4a0b0f;
+  }
+  .saffron {
+    background-color: #ffe033;
+  }
+  .viridian {
+    background-color: #40826D;
+  }
+  .prussian {
+    background-color: #003153;
+  }
+div {
+  height: 50px;
+  width: 50px;
+  }
+}
