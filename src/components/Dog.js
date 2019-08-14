@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-function Dog({ name, age, weight }) {
-  return (
-    <dl>
-      <dt>Name</dt>
-      <dd>{name}</dd>
-
-      <dt>Age</dt>
-      <dd>{age}</dd>
-
-      <dt>Weight</dt>
-      <dd>{weight ? weight : 'unknown'}</dd>
-    </dl>
-  );
+export default class Dog extends Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    weight: PropTypes.string
+  }
+  render() {
+    return (
+      <dl>
+        <dt>Name</dt>
+        <dd>{this.props.name}</dd>
+  
+        <dt>Age</dt>
+        <dd>{this.props.age}</dd>
+  
+        <dt>Weight</dt>
+        <dd>{this.props.weight ? this.props.weight : 'unknown'}</dd>
+      </dl>
+    );
+  }
 }
 
 // we can write weight like this as well
@@ -24,10 +31,3 @@ function Dog({ name, age, weight }) {
 //   </>
 // )}
 
-
-Dog.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
-  weight: PropTypes.string
-};
-export default Dog;
