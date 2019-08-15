@@ -18,7 +18,7 @@ function Photos({ photos }) {
 }
 
 Photos.propTypes = {
-  photos: PropTypes.string.isRequired
+  photos: PropTypes.array.isRequired
 };
 
 export default Photos;

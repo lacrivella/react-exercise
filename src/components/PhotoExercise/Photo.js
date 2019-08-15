@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Photo({ url, alt }) {
+function Photo({ photo }) {
 //image src tag
-  return <img src={url} alt={alt}/>;
+  return <img src={photo} alt="raccoons are adorable"/>;
 }
 
 Photo.propTypes = {
-  url: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  photo: PropTypes.string.isRequired,
 };
 
 export default Photo;

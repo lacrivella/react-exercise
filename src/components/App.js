@@ -10,6 +10,8 @@ import React, { Component, useState } from 'react';
 // import ColorDisplay from './ColorDisplay';
 // import Incrementer from './Incrementer';
 // import ColorsList from './ColorsList';
+//needed for PhotoListExercise
+import PhotoAlbum from './PhotoExercise/PhotoAlbum';
 
 
 // import Color from './Color';
@@ -33,6 +35,13 @@ export default function App() {
   //   { name: 'orange', hex: '#ffa500', rgb: { red: 255, green: 165, blue: 0 } }
   // ];
 
+  // code needed for PhotoList
+  const raccoonOne = "https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/db3c2f6660904b6784d4a41dd3ec34f0.jpg";
+  const raccoonTwo = "http://3.bp.blogspot.com/-3uZ4dQotf2s/T6ztuHlI62I/AAAAAAAACBY/cUxXC7hs_b0/s1600/Funny+Raccoon+09.jpg";
+  const raccoonThree = "https://i.redd.it/w2quv67ktrz11.jpg";
+  const raccoonFour = "https://live.staticflickr.com/166/379736754_92b4113efc_b.jpg";
+  const photos = [raccoonOne, raccoonTwo, raccoonThree,raccoonFour];
+
   return (
   /* <Header title="Nolan" image="src/assets/nolie.jpg" />
        <SayHello />
@@ -49,6 +58,9 @@ export default function App() {
       <Incrementer /> */
 
     // <ColorsList colors={colors} />
+    <>
+      <PhotoAlbum title="Look! Trash Pandas!" photos={photos} />
+    </>
   );
 }
 
