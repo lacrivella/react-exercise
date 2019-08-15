@@ -7,13 +7,23 @@ import React, { Component, useState } from 'react';
 // import Color from './Color';
 // // import ColorButton from './ColorButton';
 import ColorPicker from './ColorPicker';
+import ColorDisplay from './ColorDisplay';
 import Incrementer from './Incrementer';
+
 
 // import Color from './Color';
 
 export default class App extends Component {
- 
+  state = {
+    color: ''
+  };
+
+  colorClick = color => {
+    this.setState({ color });
+  }
   render() {
+    const { color } = this.state;
+  
     return (
      <>
        {/* <Header title="Nolan" image="src/assets/nolie.jpg" />
@@ -25,7 +35,8 @@ export default class App extends Component {
        <Cat name="Omi" breed="Bombay" color="black short hair" />
        <Color hex="#3B444B" rgb={{ red: 58, green: 68, blue: 75 }} name="arsenic gray" />
        <Header title="Color Button" /> */}
-      <ColorPicker />
+      <ColorPicker colorClick={this.colorClick}/>
+      <ColorDisplay color={color}/>
       <Incrementer />
      </>
     );

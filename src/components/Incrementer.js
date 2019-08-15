@@ -12,7 +12,7 @@ export default function Incrementer() {
     <div>
       <button onClick={increment}>push it</button>
       <h2 className={isColor ? styles.rainbow : ''}>make it rainbow</h2>
-      <h1>{count}</h1>
+      <h1 className="count">{count}</h1>
     </div>
   );
 }

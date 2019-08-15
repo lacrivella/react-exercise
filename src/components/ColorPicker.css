@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
 .ColorPicker {
 
   button {
@@ -20,11 +21,6 @@
   }
   .capri {
     background-color: #00BFFF;
-  }
-div {
-  margin: 20px;
-  height: 50px;
-  width: 50px;
   }
 
 h1 {
