@@ -18,7 +18,7 @@ export default class App extends Component {
     color: ''
   };
 
-  colorClick = color => {
+  colorClickState = color => {
     this.setState({ color });
   }
   render() {
@@ -35,7 +35,7 @@ export default class App extends Component {
        <Cat name="Omi" breed="Bombay" color="black short hair" />
        <Color hex="#3B444B" rgb={{ red: 58, green: 68, blue: 75 }} name="arsenic gray" />
        <Header title="Color Button" /> */}
-      <ColorPicker colorClick={this.colorClick}/>
+      <ColorPicker colorClick={this.colorClickState}/>
       <ColorDisplay color={color}/>
       <Incrementer />
      </>

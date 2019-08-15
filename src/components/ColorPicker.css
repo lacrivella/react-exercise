@@ -10,17 +10,17 @@
     font-family: 'Open Sans Condensed', sans-serif;
   }
 
-  .cerise {
-    background-color: #DE3163;
+  .mediumvioletred {
+    background-color: mediumvioletred;
   }
-  .saffron {
-    background-color: #ffe033;
+  .yellow {
+    background-color: yellow;
   }
-  .viridian {
-    background-color: #40826D;
+  .chartreuse {
+    background-color: chartreuse;
   }
-  .capri {
-    background-color: #00BFFF;
+  .deepskyblue {
+    background-color: deepskyblue;
   }
 
 h1 {

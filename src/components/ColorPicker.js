@@ -6,10 +6,10 @@ export default class ColorPicker extends Component {
     return (
       <section className={styles.ColorPicker}>
         <h1>select a color</h1>
-        <button className={styles.cerise} onClick={()=> this.props.colorClick('cerise')}>Cerise</button>
-        <button className={styles.saffron} onClick={()=> this.props.colorClick('saffron')}>Saffron</button>
-        <button className={styles.viridian} onClick={()=> this.props.colorClick('viridian')}>Viridian</button>
-        <button className={styles.capri} onClick={()=> this.props.colorClick('capri')}>Capri</button>
+        <button className={styles.mediumvioletred} onClick={()=> this.props.colorClick('mediumvioletred')}>Cerise</button>
+        <button className={styles.yellow} onClick={()=> this.props.colorClick('yellow')}>Saffron</button>
+        <button className={styles.chartreuse} onClick={()=> this.props.colorClick('chartreuse')}>Chartreuse</button>
+        <button className={styles.deepskyblue} onClick={()=> this.props.colorClick('deepskyblue')}>Capri</button>
       </section>
     );
   }

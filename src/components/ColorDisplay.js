@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import styles from './ColorDisplay.css';
 
 function ColorDisplay({ color }) { 
-  console.log(typeof color);
+  console.log(color);
   return (
     <>
-    <p>Hiiiii</p>
     <div className={styles.ColorDisplay} style={{ backgroundColor: color }}></div>
     </>
   );
