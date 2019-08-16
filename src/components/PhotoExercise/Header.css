@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+.Header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Shadows Into Light', cursive;
+  background: -webkit-linear-gradient(#eee, rgb(37, 37, 46));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
